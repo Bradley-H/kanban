@@ -1,6 +1,8 @@
 <template>
+
+
   <nav
-    class="bg-white font-primary py-5 flex flex-col globalTransition fixed 
+    class="bg-white font-primary py-5 flex flex-col globalTransition fixed transform
             sm:min-w-60 sm:rounded-lg h-auto z-10
             md:rounded-none md:h-full md:border-l-0 md:border-0
          dark:bg-dark-backgroundSecondary dark:border-neutral-light dark:text-white"
@@ -34,22 +36,32 @@ import { useGlobalStore } from "@/stores/globalStore";
 const globalStore = useGlobalStore();
 </script>
 
+
+
 <style scoped>
+
 nav {
-  top: var(--headerHeightMobile);
+  @media screen and (max-width: 767px){
+    top: var(--headerHeightMobile);
   left: 0%;
   border-width: var(--borderPixel);
   transform: translate(-100%, calc(var(--headerHeightMobile) - 25%));
+  }
+
   @media screen and (min-width: 768px){
     border-width: 0;
+    left: none;
     top: calc(var(--borderPixel) + 1);
     border-right-width: var(--borderPixel);
     transform: translate(-100%, calc(var(--headerHeightDesktop)));
   }
 }
-
+/* top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 */
 nav.active {
-  transform: translate(100%, calc(var(--headerHeightMobile) - 25% ));
+  @media screen and (max-width: 767px){
+    left: 50%;
+    transform: translate(-50%, calc(var(--headerHeightMobile) - 25% ));
+  }
   @media screen and (min-width: 768px){
     transform: translate(0, var(--headerHeightDesktop));
   }

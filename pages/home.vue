@@ -27,6 +27,7 @@ import { useGlobalStore } from "@/stores/globalStore";
 const globalStore = useGlobalStore();
 </script>
 
+
 <style>
 
 main{
