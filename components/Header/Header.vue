@@ -13,7 +13,7 @@
             @click="toggleSideNav">
         <slot />
         <NuxtImg
-        class="w-auto h-2 cursor-pointer sm:hidden"
+        class="w-auto h-2 cursor-pointer md:hidden"
         src="/icon-chevron-down.svg"
         alt="logo"
       />

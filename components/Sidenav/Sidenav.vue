@@ -22,7 +22,9 @@
     >
       <ButtonToggleDarkModeButton @clicker="globalStore.toggleDarkMode"/>
       <span
-        class="hidden md:block cursor-pointer" @click="globalStore.toggleSideNav">Hide Sidebar</span>
+        class="hidden md:flex gap-3 text-neutral-gray font-bold cursor-pointer" @click="globalStore.toggleSideNav">
+        <NuxtImg width="22" src="/icon-hide-sidebar.svg"/>
+        Hide Sidebar</span>
     </div>
   </nav>
 </template>
@@ -50,7 +52,6 @@ nav.active {
   transform: translate(100%, calc(var(--headerHeightMobile) - 25% ));
   @media screen and (min-width: 768px){
     transform: translate(0, var(--headerHeightDesktop));
-    
   }
 }
 </style>

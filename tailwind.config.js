@@ -45,6 +45,8 @@ module.exports = {
       fontFamily: {
         primary: ['Plus Jakarta Sans', 'sans-serif'],
       },
+      screens: {
+      },
     }
   },
 

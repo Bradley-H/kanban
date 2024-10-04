@@ -28,17 +28,18 @@ const globalStore = useGlobalStore();
 </script>
 
 <style>
-.main{
-  transform: translateY(var(--headerHeightMobile));
+
+main{
+  padding-top: var(--headerHeightMobile);
+  padding-left: 1rem;
   @media screen and (min-width: 768px){
-    transform: translateY(var(--headerHeightDesktop));
+    padding-top: calc(var(--headerHeightDesktop) + 1rem);
   }
 }
 
 main.active{
   @media screen and (min-width: 768px){
-    transform: translate(var(--sideNavWidth), var(--headerHeightDesktop));
-    width: calc(100% - var(--sideNavWidth));
+    padding-left:calc(var(--sideNavWidth) + 1rem);
   }
 }
 </style>
