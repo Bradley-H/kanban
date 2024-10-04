@@ -6,13 +6,13 @@
   </div>
 
   <div class="w-full" v-else>
-        <NuxtLink :to="href"><button :class="primary">{{ text }}</button>
-        </NuxtLink>
+    <NuxtLink :to="href"
+      ><button :class="primary">{{ text }}</button>
+    </NuxtLink>
   </div>
 </template>
 
 <script setup lang="ts">
-
 const primary = `bg-primary-purple w-full p-3 rounded-full rounded-full text-white
                      text-white font-bold bg-primary-purple w-full p-3 `;
 const secondary = `bg-primary-white w-full p-3 rounded-full rounded-full text-black
@@ -22,7 +22,7 @@ const teritary = `bg-primary-white w-full p-3 rounded-full rounded-full text-bla
                      text-black font-bold bg-primary-white w-full p-3 `;
 defineProps({
   text: String,
-  variant :{
+  variant: {
     type: String,
     required: false,
     default: "primary",

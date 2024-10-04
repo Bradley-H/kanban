@@ -1,75 +1,23 @@
-# Nuxt 3 Minimal Starter
+# Kanban Board ( Made with Nuxt js)
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
-## Setup
+# What I learned while making this?
 
-Make sure to install the dependencies:
+A few of the things that I've learned while I was making this was:
 
-```bash
-# npm
-npm install
+1) Learning about Lifecycles.
+In this I learned about what lifecycles to make and when to use them. For example, before i can mount or do any additional dom manipulation i need to check the screen width of certain components, than free that event handler (or destory it).
 
-# pnpm
-pnpm install
 
-# yarn
-yarn install
+2) Using Stores
+another big point of contention is that I had to learn to use pinia and understand how to use it. Such as using actions, manipulating state, and getters.
 
-# bun
-bun install
-```
 
-## Development Server
+3) Getting the window.innerwidth
+As silly as this might come across, getting the innerwidth was a big problem ( took me about an hour ) to understand that the document will be returned as undefined, 
 
-Start the development server on `http://localhost:3000`:
+4) Vue functions ( such as Watch())
+as I was developing this I had to learn to monitor some changes in my app.
 
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+5) Learning to use the docs
+to segway from #4, I learned to use the docs these are the holy grail of the framework and how to use them. 

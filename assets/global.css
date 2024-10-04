@@ -1,3 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root{
+  --sideNavWidth: 15rem;
+  --headerHeightMobile: 4rem;
+  --headerHeightDesktop: 6rem;
+  --scrollbar-track:#3d3d3d;
+  --scrollbar-thumb:#635FC7;
+  --borderPixel: 2px;
+}
+
+
+.globalTransition {
+  transition: all 0.35s ease-in-out;
+}
+
+ /* scrollbar */
+ ::-webkit-scrollbar {
+  width: 2rem; /* Set your desired width */
+}
+
+::-webkit-scrollbar-track{
+  background: var(--scrollbar-track);
+}
+::-webkit-scrollbar-thumb{
+  background: var(--scrollbar-thumb);
+  border-radius: 1rem;
+}
+
+@supports (scrollbar-color: var(--scrollbar-track), var(--scrollbar-thumb)) {
+  * {
+    scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+  }
+}

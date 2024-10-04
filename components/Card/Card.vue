@@ -1,9 +1,12 @@
 <template>
   <div
-    class="card flex flex-col justify-center items-center gap-5 border-2 dark:border-neutral-light border-neurtral-grey
-           p-7 rounded-lg shadow-lg dark:text-white w-full
-           dark:bg-dark-backgroundSecondary
-           ">
+    class="flex bg-white flex-col justify-center items-center border-2 globalTransition 
+           p-7 shadow-lg border-neurtral-grey gap-5
+           dark:bg-dark-backgroundSecondary dark:text-white w-full
+           dark:border-neutral-light
+           "
+    :class="{rounded: 'rounded-lg'}"
+           >
     <slot></slot>
   </div>
 </template>

@@ -3,7 +3,7 @@
         <input
             class="p-2 rounded-lg w-full border-2 border-neutral-grey focus:outline-none
             dark:bg-dark-backgroundSecondary dark:focus:border-white dark:border-neutral-light
-            placeholder:focus:text-white
+            placeholder:focus:text-white globalTransition
             "
             type="text"
             :placeholder="placeholder"
@@ -15,7 +15,7 @@
         <input
             class="p-2 rounded-lg w-full border-2 border-neutral-grey focus:outline-none
             dark:bg-dark-backgroundSecondary dark:focus:border-white dark:border-neutral-light
-            placeholder:focus:text-white
+            placeholder:focus:text-white globalTransition
             "
             type="password"
             :placeholder="placeholder"
