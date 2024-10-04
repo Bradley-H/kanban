@@ -43,7 +43,7 @@ module.exports = {
         sidenav: '240px',
       },
       fontFamily: {
-        primary: ["Plus Jakarta Sans", 'sans-serif'],
+        primary: ['Plus Jakarta Sans', 'sans-serif'],
       },
     }
   },

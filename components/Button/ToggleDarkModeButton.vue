@@ -1,5 +1,6 @@
 <template>
-  <div class="bg-primary-background dark:bg-dark-backgroundPrimary p-3 w-52 flex justify-center items-center">
+  <div class="bg-primary-background p-3 w-52 flex justify-center items-center
+  dark:bg-dark-backgroundPrimary globalTransition">
     <input
       type="checkbox"
       id="toggle"
@@ -19,14 +20,14 @@
         'bg-primary-purple': globalStore.darkMode,
         'bg-gray-600': !globalStore.darkMode,
         }"
-        class="block w-24 h-8 rounded-full transition"
+        class="block w-24 h-8 rounded-full"
       ></div>
       <div
         :class="{
         'translate-x-16 bg-white': globalStore.darkMode,
         'bg-white': !globalStore.darkMode,
         }"
-        class="dot absolute left-1 top-1 w-6 h-6 rounded-full transition transform"
+        class="dot absolute left-1 top-1 w-6 h-6 rounded-full globalTransition transform"
       ></div>
       </div>
       <!-- MOON -->

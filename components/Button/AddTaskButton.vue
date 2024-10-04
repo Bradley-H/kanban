@@ -1,5 +1,8 @@
 <template>
-    <button class="flex min-h-10 max-h-10 text-center globalTransition items-center bg-primary-purple p-3 rounded-full overflow-hidden"
+    <button class="flex min-h-10 max-h-10 text-center globalTransition items-center bg-primary-purple 
+                   p-3 rounded-full overflow-hidden
+                   md:max-h-12
+                   "
             :class="windowWidth >= 768 ? 'active' : 'hide'">           
             <div class="flex justify-center items-center">
                 <NuxtImg class="translate-x-1 h-4 md:translate-x-0" src="/icon-add-task-mobile.svg" alt="logo" />
@@ -26,10 +29,6 @@ onMounted(() => {
 onUnmounted(() => {
     window.removeEventListener('resize', updateWindowWidth);
 });
-watch(windowWidth, (newWidth) => {
-    console.log('Window width changed:', newWidth);
-});
-console.log(windowWidth);
 
 </script>
 

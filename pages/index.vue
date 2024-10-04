@@ -1,5 +1,7 @@
 <template>
     <!-- login form -->
+     <Main>
+
     <section
       class="max-w-screen-sm w-full absolute p-5 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
     >
@@ -34,6 +36,8 @@
         </div>
       </Card>
     </section>
+          
+  </Main>
 </template>
 
 <script setup lang="ts">

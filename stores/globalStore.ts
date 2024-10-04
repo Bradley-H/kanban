@@ -1,5 +1,6 @@
 import { defineStore } from "pinia";
 import { createPinia, setActivePinia } from 'pinia';
+import ToggleSideNav from "~/components/Button/ToggleSideNav.vue";
 
 const pinia = createPinia();
 setActivePinia(pinia);
@@ -9,7 +10,7 @@ export default pinia;
 export const useGlobalStore = defineStore('global', {
   state: () => ({
     darkMode: false,
-    sideActive: true,
+    sideActive: false,
     windowWidth: 0,
   }),
   actions: {
@@ -27,6 +28,9 @@ export const useGlobalStore = defineStore('global', {
     handleResize() {
         this.windowWidth = window.innerWidth;
     },
+    toggleSideNav() {  
+      this.sideActive = !this.sideActive;
+    }
   },
   getters: {},
 });
