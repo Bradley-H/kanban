@@ -1,7 +1,7 @@
 <template>
-    <li class="flex items-center gap-4 rounded-e-full transition-colors p-2 
+    <li class="flex items-center gap-4 rounded-e-full transition-colors p-2 cursor-pointer
     hover:text-white max-w-52 hover:bg-primary-purple
-    dark:text-white cursor-pointer ">
+    dark:text-white  ">
           <NuxtImg
             width="17"
             src="/icon-board.svg"

@@ -8,7 +8,7 @@
         :src="globalStore.windowWidth < 768 ? '/logo-mobile.svg' : `/logo-${imageMode}.svg`"
         alt="logo"
       />
-      <div class="flex globalTransition translate-x-5 items-center gap-1 mt-1"
+      <div class="flex globalTransition translate-x-4 items-center gap-1"
            :class="{mobile: globalStore.windowWidth < 768}"
             @click="toggleSideNav">
         <slot />

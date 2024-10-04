@@ -1,5 +1,7 @@
 <template>
-    <h1 class="font-bold text-2xl">{{ text }}</h1>
+    <h1 class="font-bold text-2xl
+             dark:text-white
+    ">{{ text }}</h1>
 </template>
 
 

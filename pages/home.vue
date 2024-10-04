@@ -1,7 +1,7 @@
 <template>
   <Header>
-    <span class="flex">
-      <h2>Hello</h2>
+    <span class="flex items-center justify-center">
+      <TitleText text="Home"/>
     </span>
   </Header>
   <Sidenav/>
@@ -12,12 +12,6 @@
   <h1>Hello</h1>
   <h1>Hello</h1>
   <h1>Hello</h1>
-  <h1></h1>
-  <h1></h1>
-  <h1></h1>
-  <h1></h1>
-  <h1></h1>
-  <h1></h1>
   </Main>
   <ButtonToggleSideNav/>
 </template>
@@ -31,7 +25,7 @@ const globalStore = useGlobalStore();
 <style>
 
 main{
-  padding-top: var(--headerHeightMobile);
+  padding-top: calc(var(--headerHeightMobile) + 1rem);
   padding-left: 1rem;
   @media screen and (min-width: 768px){
     padding-top: calc(var(--headerHeightDesktop) + 1rem);
