@@ -12,7 +12,7 @@
         : ''
     "
   >
-    <aside class="flex-grow">
+    <aside class="flex-grow sm:mb-10 md:mb-0">
       <h1 class="text-neutral-gray mb-2 ml-4">All Boards (3)</h1>
       <ul class="max-h-36 overflow-auto md:max-h-96">
         <SidenavLink text="Board 1"/>
