@@ -6,12 +6,8 @@
   </Header>
   <Sidenav/>
   <Main class="main"
-        :class="{'active': globalStore.sideActive}"
-  >
-  <h1>Hello</h1>
-  <h1>Hello</h1>
-  <h1>Hello</h1>
-  <h1>Hello</h1>
+        :class="{'active': globalStore.sideActive}">
+        <RowsRowCards/>
   </Main>
   <ButtonToggleSideNav/>
 </template>

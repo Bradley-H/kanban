@@ -6,7 +6,7 @@
       class="max-w-screen-sm w-full absolute p-5 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
     >
       <Card>
-        <TitleText :text="signup ? 'Sign Up' : 'Login'" />
+        <TitleText class="text-center" :text="signup ? 'Sign Up' : 'Login'" />
         <form class="flex flex-col gap-5 w-full" @submit.prevent="login">
           <FormControl type="text" placeholder="Username" v-model="username" />
           <FormControl
@@ -22,7 +22,7 @@
             />
           </div>
         </form>
-        <p>
+        <p class="text-center">
           {{ signup ? "Don't" : "Do you" }} have an account?
           <span
             @click="() => (signup = !signup)"
@@ -31,7 +31,7 @@
           >
         </p>
 
-        <div>
+        <div class="flex items-center justify-center">
           <ButtonToggleDarkModeButton />
         </div>
       </Card>
